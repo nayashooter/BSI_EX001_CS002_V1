@@ -15,7 +15,7 @@ namespace UploadFileTest
         public void Initialize()
         {
             _proxy = new ProxyUtils("inetproxy:83");
-            _driverIe = new DriverInternetExplorerUtils(@"D:\S2H - POLE TEST ET CONFORMITE\Outils\IED\IEDriverServer_x64_3.5.1\", _proxy);
+            _driverIe = new DriverInternetExplorerUtils(@"D:\S2H - POLE TEST ET CONFORMITE\Outils\IED\IEDriverServer_Win32_3.14.0\", _proxy);
             _driverIe.GetDriverInternet().Manage().Window.Maximize();
         }
 
