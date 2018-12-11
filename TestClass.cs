@@ -31,7 +31,7 @@ namespace UploadFileTest
 
             //_driverIe.GetDriverInternet().FindElement(By.XPath("(//input[@type='file'])[2]")).Click();
             //_driverIe.GetDriverInternet().FindElement(By.XPath("(//input[@type='file'])[2]")).Clear();
-            _driverIe.GetDriverInternet().FindElement(By.XPath("(//input[@type='file'])[2]")).SendKeys(@"C:\test.json");
+            _driverIe.GetDriverInternet().FindElement(By.XPath("(//input[@type='file'])[2]")).SendKeys("C:\\test.json");
             _driverIe.GetDriverInternet().FindElement(By.XPath("(//button[@type='button'])[4]")).Click();
 
             Assert.IsTrue(true);
