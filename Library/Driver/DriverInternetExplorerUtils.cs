@@ -9,9 +9,9 @@ namespace UploadFileTest.Library.Driver
     {
         private readonly IWebDriver _driver;
 
-        public DriverInternetExplorerUtils(string pathDriverInternet, ProxyUtils proxy)
+        public DriverInternetExplorerUtils(ProxyUtils proxy)
         {
-            _driver = new InternetExplorerDriver(pathDriverInternet, proxy.GetIeOptions());
+            _driver = new InternetExplorerDriver(proxy.GetIeOptions());
         }
 
         public IWebDriver GetDriverInternet()

@@ -15,7 +15,7 @@ namespace UploadFileTest
         public void Initialize()
         {
             _proxy = new ProxyUtils("inetproxy:83");
-            _driverIe = new DriverInternetExplorerUtils(@"D:\S2H - POLE TEST ET CONFORMITE\Outils\IED\IEDriverServer_Win32_3.14.0\", _proxy);
+            _driverIe = new DriverInternetExplorerUtils(_proxy);
             _driverIe.GetDriverInternet().Manage().Window.Maximize();
         }
 
@@ -31,7 +31,7 @@ namespace UploadFileTest
 
             //_driverIe.GetDriverInternet().FindElement(By.XPath("(//input[@type='file'])[2]")).Click();
             //_driverIe.GetDriverInternet().FindElement(By.XPath("(//input[@type='file'])[2]")).Clear();
-            _driverIe.GetDriverInternet().FindElement(By.XPath("(//input[@type='file'])[2]")).SendKeys(@"C:\Users\ylucenay\Desktop\Capture.JPG");
+            _driverIe.GetDriverInternet().FindElement(By.XPath("(//input[@type='file'])[2]")).SendKeys(@"C:\test.json");
             _driverIe.GetDriverInternet().FindElement(By.XPath("(//button[@type='button'])[4]")).Click();
 
             Assert.IsTrue(true);
