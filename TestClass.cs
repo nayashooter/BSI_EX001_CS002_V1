@@ -27,11 +27,11 @@ namespace UploadFileTest
 
             // se rend à la page www.google.fr
             _driverIe.GetDriverInternet().Navigate().GoToUrl("http://nervgh.github.io/pages/angular-file-upload/examples/simple/");
-            _driverIe.Wait(20);
+            _driverIe.Wait(10);
 
             //_driverIe.GetDriverInternet().FindElement(By.XPath("(//input[@type='file'])[2]")).Click();
             //_driverIe.GetDriverInternet().FindElement(By.XPath("(//input[@type='file'])[2]")).Clear();
-            _driverIe.GetDriverInternet().FindElement(By.XPath("(//input[@type='file'])[2]")).SendKeys(@"D:\S2H - POLE TEST ET CONFORMITE\Workspace\NUnit\UploadFileTest\Data\Files\callapp.png");
+            _driverIe.GetDriverInternet().FindElement(By.XPath("(//input[@type='file'])[2]")).SendKeys(@"C:\test.json");
             _driverIe.GetDriverInternet().FindElement(By.XPath("(//button[@type='button'])[4]")).Click();
 
             Assert.IsTrue(true);
