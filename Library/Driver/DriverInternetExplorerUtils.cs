@@ -2,6 +2,7 @@
 using UploadFileTest.Library.Proxy;
 using OpenQA.Selenium;
 using OpenQA.Selenium.IE;
+using OpenQA.Selenium.Support.Extensions;
 
 namespace UploadFileTest.Library.Driver
 {
