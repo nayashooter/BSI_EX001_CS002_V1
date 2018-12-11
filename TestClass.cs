@@ -3,6 +3,10 @@ using UploadFileTest.Library.Proxy;
 using NUnit.Framework;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Support.Extensions;
+using System;
+using System.Runtime.InteropServices;
+using System.Threading;
+using System.Windows.Forms;
 
 namespace UploadFileTest
 {
@@ -32,12 +36,12 @@ namespace UploadFileTest
 
             //_driverIe.GetDriverInternet().FindElement(By.XPath("(//input[@type='file'])[2]")).Click();
             //_driverIe.GetDriverInternet().FindElement(By.XPath("(//input[@type='file'])[2]")).Clear();
+            string File = AppDomain.CurrentDomain.BaseDirectory + "callapp.png";
 
             var inputFile = _driverIe.GetDriverInternet().FindElement(By.XPath("(//input[@type='file'])[2]"));
             _driverIe.Wait(50);
-            inputFile.SendKeys(@"D:\S2H - POLE TEST ET CONFORMITE\Workspace\NUnit\UploadFileTest\Data\Files\callapp.png");
+            inputFile.SendKeys(File);
             _driverIe.Wait(50);
-            _driverIe.GetDriverInternet().TakeScreenshot();
             _driverIe.GetDriverInternet().FindElement(By.XPath("(//button[@type='button'])[4]")).Click();
 
             Assert.IsTrue(true);
