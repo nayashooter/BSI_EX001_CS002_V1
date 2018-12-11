@@ -1,0 +1,11 @@
+D:\S2H - POLE TEST ET CONFORMITE\Workspace\NUnit\UploadFileTest\bin\Debug\UploadFileTest.dll
+D:\S2H - POLE TEST ET CONFORMITE\Workspace\NUnit\UploadFileTest\bin\Debug\UploadFileTest.pdb
+D:\S2H - POLE TEST ET CONFORMITE\Workspace\NUnit\UploadFileTest\bin\Debug\nunit.framework.dll
+D:\S2H - POLE TEST ET CONFORMITE\Workspace\NUnit\UploadFileTest\bin\Debug\WebDriver.dll
+D:\S2H - POLE TEST ET CONFORMITE\Workspace\NUnit\UploadFileTest\bin\Debug\WebDriver.Support.dll
+D:\S2H - POLE TEST ET CONFORMITE\Workspace\NUnit\UploadFileTest\bin\Debug\nunit.framework.xml
+D:\S2H - POLE TEST ET CONFORMITE\Workspace\NUnit\UploadFileTest\bin\Debug\WebDriver.xml
+D:\S2H - POLE TEST ET CONFORMITE\Workspace\NUnit\UploadFileTest\bin\Debug\WebDriver.Support.xml
+D:\S2H - POLE TEST ET CONFORMITE\Workspace\NUnit\UploadFileTest\obj\Debug\UploadFileTest.csprojResolveAssemblyReference.cache
+D:\S2H - POLE TEST ET CONFORMITE\Workspace\NUnit\UploadFileTest\obj\Debug\UploadFileTest.dll
+D:\S2H - POLE TEST ET CONFORMITE\Workspace\NUnit\UploadFileTest\obj\Debug\UploadFileTest.pdb
