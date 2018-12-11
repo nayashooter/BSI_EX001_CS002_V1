@@ -15,7 +15,7 @@ namespace UploadFileTest
         public void Initialize()
         {
             _proxy = new ProxyUtils("inetproxy:83");
-            _driverIe = new DriverInternetExplorerUtils(@"D:\S2H - POLE TEST ET CONFORMITE\Outils\IED\IEDriverServer_Win32_3.14.0\", _proxy);
+            _driverIe = new DriverInternetExplorerUtils(@"D:\S2H - POLE TEST ET CONFORMITE\Outils\IED\IEDriverServer_x64_3.5.1\", _proxy);
             _driverIe.GetDriverInternet().Manage().Window.Maximize();
         }
 
@@ -26,31 +26,12 @@ namespace UploadFileTest
             _driverIe.Wait(10);
 
             // se rend à la page www.google.fr
-            _driverIe.GetDriverInternet().Navigate().GoToUrl("http://www.google.fr");
+            _driverIe.GetDriverInternet().Navigate().GoToUrl("http://nervgh.github.io/pages/angular-file-upload/examples/simple/");
 
-            _driverIe.Wait(10);
-
-            /* recherche sur la page l'élément dont le nom est q et y rentre rien,
-             dans notre exemple c'est la textbox de recherche google */
-            _driverIe.GetDriverInternet().FindElement(By.XPath("//*[@id=\"tsf\"]/div[2]/div/div[1]/div/div[1]/input")).SendKeys("news");
-
-            _driverIe.Wait(10);
-
-            // lance la recherche
-            _driverIe.GetDriverInternet().FindElement(By.Name("q")).Submit();
-
-            // le test réussit si on trouve un lien dont le texte est Rien - Wikipédia
-
-            var res = true;
-
-            try
-            {
-                _driverIe.GetDriverInternet().FindElement(By.LinkText("Rien - Wikip&eacute;dia"));
-            }
-            catch
-            {
-                res = false;
-            }
+            //_driverIe.GetDriverInternet().FindElement(By.XPath("(//input[@type='file'])[2]")).Click();
+            //_driverIe.GetDriverInternet().FindElement(By.XPath("(//input[@type='file'])[2]")).Clear();
+            _driverIe.GetDriverInternet().FindElement(By.XPath("(//input[@type='file'])[2]")).SendKeys(@"D:\S2H - POLE TEST ET CONFORMITE\Workspace\NUnit\UploadFileTest\Data\Files\callapp.png");
+            _driverIe.GetDriverInternet().FindElement(By.XPath("(//button[@type='button'])[4]")).Click();
 
             Assert.IsTrue(true);
         }
