@@ -40,7 +40,7 @@ namespace UploadFileTest
 
 
             var inputFile = _driverIe.GetDriverInternet().FindElement(By.XPath("(//input[@type='file'])[2]"));
-            _driverIe.Wait(50);
+            _driverIe.Wait(500);
             inputFile.SendKeys(File);
             _driverIe.Wait(50);
             _driverIe.GetDriverInternet().FindElement(By.XPath("(//button[@type='button'])[4]")).Click();
