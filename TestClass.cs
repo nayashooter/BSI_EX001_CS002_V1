@@ -36,7 +36,8 @@ namespace UploadFileTest
 
             //_driverIe.GetDriverInternet().FindElement(By.XPath("(//input[@type='file'])[2]")).Click();
             //_driverIe.GetDriverInternet().FindElement(By.XPath("(//input[@type='file'])[2]")).Clear();
-            string File = @"D:\S2H - POLE TEST ET CONFORMITE\Workspace\NUnit\UploadFileTest\Data\Files\callapp.png";
+            //string File = @"D:\S2H - POLE TEST ET CONFORMITE\Workspace\NUnit\UploadFileTest\Data\Files\callapp.png";
+            string File = @"C:\image.png";
             _driverIe.Wait(500);
 
             var inputFile = _driverIe.GetDriverInternet().FindElement(By.XPath("(//input[@type='file'])[2]"));
