@@ -12,7 +12,7 @@ namespace UploadFileTest.Library.Driver
 
         public DriverInternetExplorerUtils(ProxyUtils proxy)
         {
-            _driver = new InternetExplorerDriver(proxy.GetIeOptions());
+            _driver = new InternetExplorerDriver(@"D:\S2H - POLE TEST ET CONFORMITE\Outils\IED\IEDriverServer_x64_3.14.0\", proxy.GetIeOptions());
         }
 
         public IWebDriver GetDriverInternet()
