@@ -36,7 +36,7 @@ namespace UploadFileTest
 
             //_driverIe.GetDriverInternet().FindElement(By.XPath("(//input[@type='file'])[2]")).Click();
             //_driverIe.GetDriverInternet().FindElement(By.XPath("(//input[@type='file'])[2]")).Clear();
-            string File =  @"callapp.png";
+            string File = @"C:\Program Files (x86)\Jenkins\workspace\BSI_EX001_CS002_V1\Data\Files\callapp.png";
 
 
             var inputFile = _driverIe.GetDriverInternet().FindElement(By.XPath("(//input[@type='file'])[2]"));

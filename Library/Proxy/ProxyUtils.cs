@@ -16,7 +16,10 @@ namespace UploadFileTest.Library.Proxy
         {
             var options = new InternetExplorerOptions
             {
-                Proxy = _proxyInstance
+                Proxy = _proxyInstance,
+                EnsureCleanSession = true,
+                IntroduceInstabilityByIgnoringProtectedModeSettings = true,
+                IgnoreZoomLevel = true
             };
 
             return options;
