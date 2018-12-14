@@ -12,7 +12,7 @@ namespace UploadFileTest.Library.Driver
 
         public DriverInternetExplorerUtils(ProxyUtils proxy)
         {
-            _driver = new InternetExplorerDriver(); //proxy.GetIeOptions());
+            _driver = new InternetExplorerDriver(proxy.GetIeOptions());
         }
 
         public IWebDriver GetDriverInternet()
