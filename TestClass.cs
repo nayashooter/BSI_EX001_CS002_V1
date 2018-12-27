@@ -50,7 +50,7 @@ namespace UploadFileTest
         //}
 
         [Test]
-        public void TestSearchGoogle()
+        public void BSI_EX001_CS001()
         {
             _driverIe.Wait(10);
             // se rend à la page www.google.fr
