@@ -25,29 +25,29 @@ namespace UploadFileTest
         }
 
 
-        [Test]
-        public void TestUploadFile()
-        {
-            _driverIe.Wait(10);
+        //[Test]
+        //public void TestUploadFile()
+        //{
+        //    _driverIe.Wait(10);
 
-            // se rend à la page www.google.fr
-            _driverIe.GetDriverInternet().Navigate().GoToUrl("http://nervgh.github.io/pages/angular-file-upload/examples/simple/");
-            _driverIe.Wait(10);
+        //    // se rend à la page www.google.fr
+        //    _driverIe.GetDriverInternet().Navigate().GoToUrl("http://nervgh.github.io/pages/angular-file-upload/examples/simple/");
+        //    _driverIe.Wait(10);
 
-            //_driverIe.GetDriverInternet().FindElement(By.XPath("(//input[@type='file'])[2]")).Click();
-            //_driverIe.GetDriverInternet().FindElement(By.XPath("(//input[@type='file'])[2]")).Clear();
-            //string File = @"D:\S2H - POLE TEST ET CONFORMITE\Workspace\NUnit\UploadFileTest\Data\Files\callapp.png";
-            string File = @"C:\image.png";
-            _driverIe.Wait(500);
+        //    //_driverIe.GetDriverInternet().FindElement(By.XPath("(//input[@type='file'])[2]")).Click();
+        //    //_driverIe.GetDriverInternet().FindElement(By.XPath("(//input[@type='file'])[2]")).Clear();
+        //    //string File = @"D:\S2H - POLE TEST ET CONFORMITE\Workspace\NUnit\UploadFileTest\Data\Files\callapp.png";
+        //    string File = @"C:\image.png";
+        //    _driverIe.Wait(500);
 
-            var inputFile = _driverIe.GetDriverInternet().FindElement(By.XPath("(//input[@type='file'])[2]"));
-            _driverIe.Wait(500);
-            inputFile.SendKeys(File);
-            _driverIe.Wait(50);
-            _driverIe.GetDriverInternet().FindElement(By.XPath("(//button[@type='button'])[4]")).Click();
+        //    var inputFile = _driverIe.GetDriverInternet().FindElement(By.XPath("(//input[@type='file'])[2]"));
+        //    _driverIe.Wait(500);
+        //    inputFile.SendKeys(File);
+        //    _driverIe.Wait(50);
+        //    _driverIe.GetDriverInternet().FindElement(By.XPath("(//button[@type='button'])[4]")).Click();
 
-            Assert.IsTrue(true);
-        }
+        //    Assert.IsTrue(true);
+        //}
 
         [Test]
         public void TestSearchGoogle()
