@@ -63,6 +63,20 @@ namespace UploadFileTest
             Assert.IsTrue(true);
         }
 
+        [Test]
+        public void BSI_EX001_CS002()
+        {
+            _driverIe.Wait(10);
+            // se rend à la page www.google.fr
+            _driverIe.GetDriverInternet().Navigate().GoToUrl("http://www.google.fr");
+            _driverIe.Wait(120);
+            _driverIe.GetDriverInternet().FindElement(By.XPath("//*[@id=\"tsf\"]/div[2]/div/div[1]/div/div[1]/input")).SendKeys("news");
+            _driverIe.Wait(10);
+            // lance la recherche
+            _driverIe.GetDriverInternet().FindElement(By.Name("q")).Submit();
+            Assert.IsTrue(true);
+        }
+
         [TearDown]
         public void EndTest()
         {
